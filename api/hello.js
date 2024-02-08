@@ -2,7 +2,7 @@
 const { getNextGameAsync } = require('../src/services/scraperService.js');
 const NodeCache = require("node-cache");
 // import type { NextApiRequest, NextApiResponse } from "next";
-const { Cors } = require("cors");
+const Cors = require("cors");
 
 // Initializing the cors middleware
 // You can read more about the available options here: https://github.com/expressjs/cors#configuration-options
