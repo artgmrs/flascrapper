@@ -13,7 +13,7 @@ export default async function handler(req, res) {
   // })
   try {
     console.log('chegou')
-    const key = req.originalUrl;
+    const key = req.url;
     const cachedResponse = myCache.get(key);
 
     if (cachedResponse) {
