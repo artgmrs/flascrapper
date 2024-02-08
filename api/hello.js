@@ -44,11 +44,12 @@ export default async function handler(req, res) {
   try {
     console.log('chegou')
     const key = req.url;
+    console.log('url', req.url);
     const cachedResponse = myCache.get(key);
 
     if (cachedResponse) {
       res.send(cachedResponse);
-      return next();
+      // return next();
     } else {
       const retorno = await getNextGameAsync();
       myCache.set(key, retorno);
