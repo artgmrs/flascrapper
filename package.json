@@ -2,9 +2,22 @@
   "repository": "https://github.com/vercel/examples.git",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "start-vercel": "nodemon api/index.js",
+    "dev": "nodemon src/index.js",
+    "vercel-build": "echo hello"
+  },
   "devDependencies": {
     "@types/node": "^17.0.42",
     "@vercel/node": "^2.9.6",
-    "typescript": "^4.7.3"
+    "typescript": "^4.7.3",
+    "axios": "^1.3.2",
+    "cheerio": "^1.0.0-rc.12",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "luxon": "^3.3.0",
+    "node-cache": "^5.1.2"
   }
 }
